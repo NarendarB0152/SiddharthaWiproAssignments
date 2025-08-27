@@ -81,4 +81,4 @@ Message: Hello from Spring Setter Injection!
 
 ---
 
-Do you also want me to give you the **annotation-based version** (`@Component` + `@Value` with `@Autowired` setter) alongside this XML style?
+
