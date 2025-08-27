@@ -20,21 +20,22 @@ spring-mvc-jstl-topview/
 # pom.xml (Spring Boot 3.x + JSP + JSTL)
 
 ```xml
-<project xmlns="http://maven.apache.org/POM/4.0.0" 
+<project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
-                             http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.example</groupId>
-  <artifactId>spring-mvc-jstl-topview</artifactId>
-  <version>1.0.0</version>
-  <packaging>war</packaging>
 
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
     <version>3.3.2</version>
+    <relativePath/>
   </parent>
+
+  <groupId>com.example</groupId>
+  <artifactId>spring-mvc-jstl-topview</artifactId>
+  <version>1.0.0</version>
+  <packaging>war</packaging>
 
   <properties>
     <java.version>17</java.version>
@@ -47,24 +48,29 @@ spring-mvc-jstl-topview/
       <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
 
-    <!-- JSP support for Tomcat (Jasper) -->
+    <!-- JSP support -->
     <dependency>
       <groupId>org.apache.tomcat.embed</groupId>
       <artifactId>tomcat-embed-jasper</artifactId>
     </dependency>
 
-    <!-- JSTL for Jakarta (Boot 3 uses jakarta.*) -->
+    <!-- JSTL (Jakarta): add BOTH API and implementation -->
+    <dependency>
+      <groupId>jakarta.servlet.jsp.jstl</groupId>
+      <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
+      <version>3.0.2</version>
+    </dependency>
     <dependency>
       <groupId>org.glassfish.web</groupId>
       <artifactId>jakarta.servlet.jsp.jstl</artifactId>
       <version>3.0.1</version>
     </dependency>
 
-    <!-- Optional: compile-time only if you deploy as WAR to external container -->
+    <!-- Tests -->
     <dependency>
       <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-tomcat</artifactId>
-      <scope>provided</scope>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <scope>test</scope>
     </dependency>
   </dependencies>
 
@@ -72,12 +78,18 @@ spring-mvc-jstl-topview/
     <finalName>spring-mvc-jstl-topview</finalName>
     <plugins>
       <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.2.5</version>
+      </plugin>
+      <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
       </plugin>
     </plugins>
   </build>
 </project>
+
 ```
 
 # application.properties
