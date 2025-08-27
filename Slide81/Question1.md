@@ -6,7 +6,7 @@ Got it! Here’s a clean Spring (Core) IoC example using **XML configuration** t
 spring-ioc-players/
 ├─ pom.xml
 ├─ src/main/java/com/example/ioc/
-│  ├─ App.java
+│  ├─ Main.java
 │  ├─ model/
 │  │  ├─ Country.java
 │  │  └─ Player.java
