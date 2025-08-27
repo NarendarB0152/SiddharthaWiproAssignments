@@ -1,3 +1,5 @@
+Perfect 👍 This is the classic **Setter Injection** example in Spring. Let’s implement it step by step:
+
 ---
 
 ## 1. `SetterMessage.java`
@@ -78,3 +80,5 @@ Message: Hello from Spring Setter Injection!
 * **Setter Injection:** Dependency (`message`) is injected via a setter method.
 
 ---
+
+Do you also want me to give you the **annotation-based version** (`@Component` + `@Value` with `@Autowired` setter) alongside this XML style?
