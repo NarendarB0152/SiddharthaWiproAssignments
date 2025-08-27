@@ -283,7 +283,7 @@ public class PlayerService {
 </beans>
 ```
 
-# App.java (Client program)
+# Main.java (Client program)
 
 ```java
 package com.example.ioc;
@@ -294,7 +294,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.util.Scanner;
 
-public class App {
+public class Main {
     public static void main(String[] args) {
         ApplicationContext ctx = new ClassPathXmlApplicationContext("beans.xml");
         PlayerService service = ctx.getBean("playerService", PlayerService.class);
