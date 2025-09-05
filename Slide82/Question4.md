@@ -1,6 +1,4 @@
-Awesome—here’s a clean Spring Boot (Spring MVC) + JSP + JSTL app that does exactly what you asked:
 
-It shows an `index.jsp` with a link “Show Top Series/Movies”. When clicked, the controller returns a `Model` containing an `ArrayList<String>` (10+ titles), and `result.jsp` renders them using JSTL’s `<c:forEach>`.
 
 ---
 
@@ -226,10 +224,5 @@ Open: `http://localhost:8080/` → click **Show Top Series/Movies** → see the 
 
 ---
 
-### Notes / gotchas
-
-* Spring Boot 3 uses **Jakarta** packages; hence the JSTL taglib URI is `jakarta.tags.core`.
-* JSP files must live under `/src/main/webapp/WEB-INF/jsp/` to work with the configured prefix/suffix.
-* If you deploy as a standalone JAR (embedded Tomcat), the given setup works. If you deploy as a WAR to an external servlet container, keep `spring-boot-starter-tomcat` as `provided`.
 
 
