@@ -1,4 +1,3 @@
-Awesome—let’s build a clean Spring MVC + Hibernate (JPA) app that collects Student details from a form and saves them to a database. I’ll use **Spring Boot (3.x)** with **Spring MVC**, **Spring Data JPA (Hibernate provider)**, **Thymeleaf** for the form UI, and **H2** in-memory DB by default (with a ready-to-switch MySQL config).
 
 ---
 
@@ -498,12 +497,4 @@ Open:
 
 ---
 
-## Notes & Tips
 
-* We used **Jakarta** packages (`jakarta.persistence`, `jakarta.validation`) which are required in Spring Boot 3.x.
-* Chosen **Thymeleaf** to avoid JSP/JSTL classpath issues on Boot 3 (you previously hit a JSTL error)—this works smoothly with embedded Tomcat.
-* Validation errors are displayed inline; duplicate email is checked server-side.
-
----
-
-If you want this exact flow using **pure Spring MVC (XML config + Hibernate SessionFactory without Spring Data JPA)** or you specifically want **JSP** views, tell me and I’ll drop the alternative configuration and pages.
