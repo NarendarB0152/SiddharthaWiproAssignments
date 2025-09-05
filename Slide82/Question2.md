@@ -1,4 +1,4 @@
-Sweet — here’s the **updated Spring Boot project** (JSP + EL + JSTL) that **builds cleanly** and includes proper **JUnit 5 / Spring Boot tests**.
+
 
 ---
 
