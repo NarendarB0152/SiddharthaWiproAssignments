@@ -74,11 +74,6 @@ Message: Hello from Spring Setter Injection!
 
 ---
 
-✨ This demonstrates **Spring Basics**:
-
-* **Inversion of Control (IoC):** Object creation & wiring is done by Spring container, not manually with `new`.
-* **Setter Injection:** Dependency (`message`) is injected via a setter method.
-
 ---
 
 
