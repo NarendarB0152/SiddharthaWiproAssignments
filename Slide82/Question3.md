@@ -1,5 +1,4 @@
-Here’s the **final, clean Spring Boot project** for the Marks form app, fixed to avoid the “ambiguous handler” error.
-We use **HomeController** to redirect `/` → `/marks`, and **MarksController** only maps `/marks`.
+
 
 ---
 
