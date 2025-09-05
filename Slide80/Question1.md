@@ -1,4 +1,4 @@
-Perfect use-case for simple DI with Spring XML. Here’s a clean setup:
+
 
 ### 1) Model: `Shape` (abstract) and its subclasses
 
