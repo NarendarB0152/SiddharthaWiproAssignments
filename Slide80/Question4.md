@@ -1,4 +1,4 @@
-Awesome—this is a neat IoC + composition exercise. Here’s a simple Spring (XML) setup that creates two `Student` beans, each wired with its own `Test` object.
+
 
 ### 1) Model classes
 
