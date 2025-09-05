@@ -1,4 +1,4 @@
-Great exercise 👌 — this is exactly what **Constructor Injection** in Spring is meant to show. Let’s build it step by step.
+
 
 ---
 
